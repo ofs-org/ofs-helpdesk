@@ -1,7 +1,7 @@
-import { app } from "./app";
+import { app } from './app'
 
-const PORT  = 3333
+const PORT = 3333
 
-app.listen(PORT , () => {
+app.listen(PORT, () => {
   console.log(` 🚀 Server in running: http://localhost:${PORT}`)
 })

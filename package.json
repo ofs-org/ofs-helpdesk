@@ -8,7 +8,7 @@
     "test": "turbo test",
     "test:watch": "turbo test:watch",
     "typecheck": "turbo typecheck",
-     "coverage": "turbo coverage",
+    "coverage": "turbo coverage",
     "format": "biome format --write .",
     "format:check": "biome format . --write=false"
   },

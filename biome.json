@@ -7,10 +7,12 @@
   },
   "files": {
     "includes": [
-      "**/node_modules/**",
-      "**/.next/**",
-      "**/build/**",
-      "**/coverage/**"
+      "**",
+      "!**/.next",
+      "!**/build",
+      "!**/coverage",
+      "!**/globals.css",
+      "!**/public/*.*"
     ]
   },
   "formatter": {

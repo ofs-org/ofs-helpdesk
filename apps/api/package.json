@@ -4,14 +4,14 @@
   "description": "API do ofs-helpdesk",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "tsx watch src/server.ts", 
-    "build": "tsup src/server.ts out--dir build", 
-    "start": "node build/server.js", 
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src/server.ts out--dir build",
+    "start": "node build/server.js",
     "lint": "biome check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit", 
-    "coverage": "vitest run --coverage"  
+    "typecheck": "tsc --noEmit",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
