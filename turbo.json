@@ -5,10 +5,16 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "!.next/dev/**"]
+      "outputs": ["build/**", ".next/**", "!.next/cache/**", "!.next/dev/**"]
     },
     "lint": {
       "dependsOn": ["^lint"]
+    },
+    "test": {
+      "outputs": ["coverage/**"]
+    } ,
+     "coverage": {
+      "outputs": ["coverage/**"]
     },
     "check-types": {
       "dependsOn": ["^check-types"]

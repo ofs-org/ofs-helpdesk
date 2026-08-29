@@ -2,16 +2,27 @@
   "name": "ofs-helpdesk",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "test:watch": "turbo test:watch",
+    "typecheck": "turbo typecheck",
+     "coverage": "turbo coverage",
+    "format": "biome format --write .",
+    "format:check": "biome format . --write=false"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.11",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@vitejs/plugin-react": "^6.1.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "jsdom": "^30.0.1",
     "prettier": "3.9.6",
     "turbo": "^2.10.12",
-    "typescript": "7.0.2"
+    "typescript": "7.0.2",
+    "vitest": "^4.1.11"
   },
   "packageManager": "pnpm@11.23.0",
   "engines": {
